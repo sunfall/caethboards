@@ -46,8 +46,8 @@ in any single node.
 
 # The layouts
 
-The boards are named based on which metarule they're meant for, and then come
-in various sizes and variants:
+The boards are named based on which metarule they're meant for (`caeth-`,
+`noc-`, or `noeth-`), and then come in various sizes and variants:
 
 * `-4square-`: Boards meant for games on a square grid; votes are orthogonal.
 * `-8square-`: As `4square`, but with added diagonal votes.
@@ -55,15 +55,16 @@ in various sizes and variants:
 * `-hexhex-`: Boards meant for any game that uses a regular hex-hex board.
 * `-y-`: Boards meant for the Game of Y.
 
-The `caeth_loz` boards are a variant art-style for Caeth boards that makes the
-overgame cells much more prominent, in the style of the Noc boards.
+The `caeth_loz-` boards are a variant art-style for Caeth boards that makes the
+overgame cells much more prominent, much like the Noc and Noeth designs.
 
 # The sizes and variants
 
 For a given overgame, there are usually several boards of different sizes.  In
 addition, the PDFs are rendered two different ways for each board: one with
 light grey numbers representing the number of undergame nodes needed to claim a
-given cell, and one without those numbers.
+given cell, and one without those numbers; the latter have a `-no-counts`
+suffix.
 
 Some boards are small enough that multiple copies are present on the same page
 in the PDF.
