@@ -5,7 +5,10 @@ games.
 
 These boards are released into the public domain and are best played with
 colored pencils, preferably four in two sets of related shades, one for the
-voting edges or points and one for the cells themselves.
+voting edges or points and one for the cells themselves.  Alternately, using
+the _flood fill_ or _paint bucket_ tool in most paint programs will work as a
+way to play with these boards on the computer, whether via PBeM or Google Drive
+or what have you.
 
 Pre-rendered American letter-sized versions are in the `pdf/` directory.  The
 Inkscape source SVGs are in `src/`.
