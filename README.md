@@ -55,6 +55,9 @@ in various sizes and variants:
 * `-hexhex-`: Boards meant for any game that uses a regular hex-hex board.
 * `-y-`: Boards meant for the Game of Y.
 
+The `caeth_loz` boards are a variant art-style for Caeth boards that makes the
+overgame cells much more prominent, in the style of the Noc boards.
+
 # The sizes and variants
 
 For a given overgame, there are usually several boards of different sizes.  In
