@@ -44,14 +44,16 @@ only if they are one Noc node and one Caeth node *and* they do not share
 any overgame cells.  If they cannot meet those criteria, they instead fill
 in any single node.
 
-# The overgames
+# The layouts
 
 The boards are named based on which metarule they're meant for, and then come
 in various sizes and variants:
 
+* `-4square-`: Boards meant for games on a square grid; votes are orthogonal.
+* `-8square-`: As `4square`, but with added diagonal votes.
 * `-hex-`: Boards meant for Hex and any variants played on the same board.
-* `-y-`: Boards meant for the Game of Y.
 * `-hexhex-`: Boards meant for any game that uses a regular hex-hex board.
+* `-y-`: Boards meant for the Game of Y.
 
 # The sizes and variants
 
