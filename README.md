@@ -72,8 +72,8 @@ The boards are named based on which metarule they're meant for (`caeth-`,
 * `-hex-`: Boards meant for Hex and any variants played on the same board.
 * `-hexhex-`: Boards meant for any game that uses a regular hex-hex board.
 * `-square-`: Boards meant for games on a square grid.
-  * `-4square`: A Caeth-specific version with explicit orthogonal votes.
-  * `-8square`: As `4square`, but with added diagonal votes.
+  * `-4square-`: A Caeth-specific version with explicit orthogonal votes.
+  * `-8square-`: As `4square`, but with added diagonal votes.
 * `-y-`: Boards meant for the Game of Y.
 
 The `caeth_loz-` boards are a variant art-style for Caeth boards that makes the
