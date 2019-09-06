@@ -1,7 +1,8 @@
 # caethboards
 
 This repository contains various artisanal, hand-crafted Caeth, Noc, and Noeth
-boards of many sizes and styles for your board game playing enjoyment.
+boards of many sizes and styles for your board game playing enjoyment.  (Or
+adult coloring, thanks to the hypnotic repeating patterns.)
 
 These boards are released into the public domain and are best played with
 colored pencils, preferably four in two sets of related shades.  Give each
@@ -25,53 +26,54 @@ although they can be modified to handle piece removal.
 
 ## Caeth
 
-With the Caeth metarule, every pair of adjacent cells has an edge between them
-as part of the Caeth *undergame*.  Players take turns claiming one of those
-edges per turn; use the pie rule for the first move.  An overgame cell is
-immediately claimed by a player when that player controls half or more of the
-Caeth edges into that cell; a single edge may trigger more than one overgame
-claim at the same time.
+With the Caeth metarule, every pair of adjacent cells has an edge (or _node_)
+between them as part of the Caeth *undergame*.  Players take turns claiming one
+of those nodes per turn; use the pie rule for the first move.  An overgame cell
+is immediately claimed by a player when that player controls half or more of
+the Caeth nodes into that cell; a single node may trigger more than one
+overgame cell claim at the same time.
 
 A player wins a Caeth metarule game _only by winning the overgame by its
 standard win condition (connecting both sides, all three sides, etc.)_,
-counting **only** the overgame cells.  The edges are not considered part of any
-overgame connection.
+counting **only** the overgame cells.  The undergame nodes are not considered
+part of any overgame connection.
 
 ## Noc
 
 The Noc metarule is similar to the Caeth metarule, except the undergame
-involves cells that lie at the adjoining or "meeting points" of the cells of
-the grid.  In a hexagonal tiling, that means most Noc cells are votes for three
+involves nodes that lie at the adjoining or "meeting points" of the cells of
+the grid.  In a hexagonal tiling, that means most Noc nodes are votes for three
 cells rather than just two.  It is named in honor of ConHex, which uses a
 custom board but a closely-related version of this mechanism.
 
 ## Noeth
 
-Noeth is a combination of both Noc and Caeth, with the undergame cells for both
+Noeth is a combination of both Noc and Caeth, with the undergame nodes for both
 on the same grid.  It uses a modified 1-2-2-2... move protocol; the first
-player fills in any undergame cell, and from then on each player fills in two
-undergame cells _if and only if_ they are one Noc cell and one Caeth cell *and*
+player fills in any undergame node, and from then on each player fills in two
+undergame nodes _if and only if_ they are one Noc node and one Caeth node *and*
 those two choices do not share any overgame cells.  If they cannot meet those
 criteria, or for some reason wish not to do so (possible in a game like
-Havannah), they instead claim any single undergame cell.
+Havannah), they instead claim any single undergame node.
 
 ## Near-Noeth
 
 Near-Noeth is identical to Noeth, except that the criteria for dual claiming is
-as follows: you fill in two undergame cells _if and only if_ they are one Noc
-cell and one Caeth cell *and* those two choices share **precisely one**
+as follows: you fill in two undergame node _if and only if_ they are one Noc
+node and one Caeth node *and* those two choices share **precisely one**
 overgame cell.  As in standard Noeth, an inability to do so (or a choice not
-to) results in claiming a single undergame cell.
+to) results in claiming a single undergame node.
 
 # The boards themselves
 
 The boards are named based on which metarule they're meant for (`caeth-`,
 `noc-`, or `noeth-`), and then come in various sizes and variants:
 
-* `-4square-`: Boards meant for games on a square grid; votes are orthogonal.
-* `-8square-`: As `4square`, but with added diagonal votes.
 * `-hex-`: Boards meant for Hex and any variants played on the same board.
 * `-hexhex-`: Boards meant for any game that uses a regular hex-hex board.
+* `-square-`: Boards meant for games on a square grid.
+  * `-4square`: A Caeth-specific version with explicit orthogonal votes.
+  * `-8square`: As `4square`, but with added diagonal votes.
 * `-y-`: Boards meant for the Game of Y.
 
 The `caeth_loz-` boards are a variant art-style for Caeth boards that makes the
@@ -98,4 +100,5 @@ not required.  Just, y'know, appreciated.  My email address is phil PERIOD
 bordelon SWIRLY-A gmail FULLSTOP com, with the appropriate substitutions.)
 
 Also feel free to contact me if you're interested in a PBeM (or equivalent)
-game with one of these boards.
+game with one of these boards.  Or if you color then in a particularly pretty
+fashion.
