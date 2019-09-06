@@ -1,53 +1,69 @@
 # caethboards
 
-Caeth, Noc, and Noeth boards of various sizes for playing different connection
-games.
+This repository contains various artisanal, hand-crafted Caeth, Noc, and Noeth
+boards of many sizes and styles for your board game playing enjoyment.
 
 These boards are released into the public domain and are best played with
-colored pencils, preferably four in two sets of related shades, one for the
-voting edges or points and one for the cells themselves.  Alternately, using
-the _flood fill_ or _paint bucket_ tool in most paint programs will work as a
-way to play with these boards on the computer, whether via PBeM or Google Drive
-or what have you.
+colored pencils, preferably four in two sets of related shades.  Give each
+player one of the sets, and have them use one color for the undergame voting
+cells and the other for the won overgame cells when successfully claimed.
+
+Alternately, using the _flood fill_ or _paint bucket_ tool in most paint
+programs will work as a way to play with these boards on the computer, whether
+via PBeM or Google Drive or what have you.
 
 Pre-rendered American letter-sized versions are in the `pdf/` directory.  The
 Inkscape source SVGs are in `src/`.
 
 # The metarules
 
+All of the metarules used by these boards are voting or majority "mutators"
+that you can use to modify a number of different board games (hereafter the
+*overgames*); they work best with connection games, and in particular ones
+where pieces are placed on the board and never moved or removed afterwards,
+although they can be modified to handle piece removal.
+
 ## Caeth
 
-Caeth is a voting/majority metarule that you can use to modify a number of
-games (hereafter the *overgame*); it works best with connection games, and in
-particular ones where pieces are placed on the board and never moved or removed
-afterwards.
+With the Caeth metarule, every pair of adjacent cells has an edge between them
+as part of the Caeth *undergame*.  Players take turns claiming one of those
+edges per turn; use the pie rule for the first move.  An overgame cell is
+immediately claimed by a player when that player controls half or more of the
+Caeth edges into that cell; a single edge may trigger more than one overgame
+claim at the same time.
 
-In the Caeth metarule version of a game, each adjacent cell has an edge between
-them as part of the Caeth *undergame*.  Players take turns shading one of those
-edges per turn; use the pie rule for the first move.  When any overgame cell
-has half or more of its edges claimed by a single player, it is claimed by that
-player.  A player wins by winning the overgame by its standard win condition
-(connecting both sides, all three sides, etc.), counting _only_ the overgame
-cells.  The edges are not considered part of any connection.
+A player wins a Caeth metarule game _only by winning the overgame by its
+standard win condition (connecting both sides, all three sides, etc.)_,
+counting **only** the overgame cells.  The edges are not considered part of any
+overgame connection.
 
 ## Noc
 
 The Noc metarule is similar to the Caeth metarule, except the undergame
-involves cells rather than edges that lie at the adjoining or "meeting points"
-of the cells of the grid.  In a hexagonal tiling, that means most Noc cells
-count for three cells rather than just two.  It is named in honor of ConHex,
-which uses a custom board but a closely-related version of this mechanism.
+involves cells that lie at the adjoining or "meeting points" of the cells of
+the grid.  In a hexagonal tiling, that means most Noc cells are votes for three
+cells rather than just two.  It is named in honor of ConHex, which uses a
+custom board but a closely-related version of this mechanism.
 
 ## Noeth
 
-Noeth is a combination of both Noc and Caeth, with the nodes for both on the
-same grid.  It uses a modified 1-2-2-2... move protocol; the first player
-fills in any node, and from then on each player fills in two nodes if and
-only if they are one Noc node and one Caeth node *and* they do not share
-any overgame cells.  If they cannot meet those criteria, they instead fill
-in any single node.
+Noeth is a combination of both Noc and Caeth, with the undergame cells for both
+on the same grid.  It uses a modified 1-2-2-2... move protocol; the first
+player fills in any undergame cell, and from then on each player fills in two
+undergame cells _if and only if_ they are one Noc cell and one Caeth cell *and*
+those two choices do not share any overgame cells.  If they cannot meet those
+criteria, or for some reason wish not to do so (possible in a game like
+Havannah), they instead claim any single undergame cell.
 
-# The layouts
+## Near-Noeth
+
+Near-Noeth is identical to Noeth, except that the criteria for dual claiming is
+as follows: you fill in two undergame cells _if and only if_ they are one Noc
+cell and one Caeth cell *and* those two choices share **precisely one**
+overgame cell.  As in standard Noeth, an inability to do so (or a choice not
+to) results in claiming a single undergame cell.
+
+# The boards themselves
 
 The boards are named based on which metarule they're meant for (`caeth-`,
 `noc-`, or `noeth-`), and then come in various sizes and variants:
@@ -61,7 +77,7 @@ The boards are named based on which metarule they're meant for (`caeth-`,
 The `caeth_loz-` boards are a variant art-style for Caeth boards that makes the
 overgame cells much more prominent, much like the Noc and Noeth designs.
 
-# The sizes and variants
+# Sizes and numbers
 
 For a given overgame, there are usually several boards of different sizes.  In
 addition, the PDFs are rendered two different ways for each board: one with
@@ -70,7 +86,7 @@ given cell, and one without those numbers; the latter have a `-no-counts`
 suffix.
 
 Some boards are small enough that multiple copies are present on the same page
-in the PDF.
+in the printable PDFs.
 
 # Using these elsewhere
 
@@ -80,3 +96,6 @@ editing them much easier than the formatted-for-printing files.  (I'd also
 appreciate a heads-up as to what you're using them for, but that's obviously
 not required.  Just, y'know, appreciated.  My email address is phil PERIOD
 bordelon SWIRLY-A gmail FULLSTOP com, with the appropriate substitutions.)
+
+Also feel free to contact me if you're interested in a PBeM (or equivalent)
+game with one of these boards.
