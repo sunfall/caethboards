@@ -101,5 +101,5 @@ not required.  Just, y'know, appreciated.  My email address is phil PERIOD
 bordelon SWIRLY-A gmail FULLSTOP com, with the appropriate substitutions.)
 
 Also feel free to contact me if you're interested in a PBeM (or equivalent)
-game with one of these boards.  Or if you color then in a particularly pretty
+game with one of these boards.  Or if you color them in a particularly pretty
 fashion.
