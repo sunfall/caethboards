@@ -14,7 +14,7 @@ programs will work as a way to play with these boards on the computer, whether
 via PBeM or Google Drive or what have you.
 
 Pre-rendered American letter-sized versions are in the `pdf/` directory.  The
-Inkscape source SVGs are in `src/`.
+Inkscape source SVGs are in `src/`.  Contributed variations are in the `contrib/` directory.
 
 # The metarules
 
